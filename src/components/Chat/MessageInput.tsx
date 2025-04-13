@@ -78,7 +78,7 @@ const MessageInput: React.FC<MessageInputProps> = ({
 
   const { data: channelInfo } = useGetChanelByIdQuery(channelId);
   const [strimTokenFn] = useCreateTokenMutation({});
-  const appId = process.env.NEXT_PUBLIC_AGORA_APP_ID;
+  const appId = "540fc1604c20484bbdecdf9db237538b";
 
   const content = useSelector((state: any) => state?.editor?.content);
   const dispatch = useDispatch();
